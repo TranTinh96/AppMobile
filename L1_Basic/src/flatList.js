@@ -21,12 +21,7 @@ export default class flatList extends Component {
     render() {
         return (
             <View style={styles.container}> 
-                <FlatList 
-                    data={Users}
-                    renderItem={({item,index})=> <flatListItem  item={item} index={index} />}
-                
-                
-                />
+                <Text> Tran tinh</Text>
             </View> 
         )
     }
