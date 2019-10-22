@@ -1,5 +1,20 @@
-import React, { Component } from 'react'
-import { View,Text,FlatList,StyleSheet,Image,Alert} from "react-native";
+import React, {Component} from 'react';
+import {FlatList, StyleSheet,Alert} from 'react-native';
+import {
+  Container,
+  Header,
+  Title,
+  Content,
+  Button,
+  Left,
+  Right,
+  Body,
+  Icon,
+  Text,
+  List,
+  ListItem,
+  Thumbnail
+} from 'native-base';
 import Swipeout from 'react-native-swipeout';
 import Users from '../data/users';
 
@@ -61,66 +76,65 @@ constructor(props) {
       };
     return (
       <Swipeout {...swipeSetting}>
-        <View style={styles.view}>
-          <Image
-            source={{uri: this.props.item.uri}}
-            style={{height: 70, width: 70}}
-          />
-          <View style={styles.text}>
-            <Text>{this.props.item.name}</Text>
-          </View>
-        </View>
+        <ListItem avatar>
+          <Left>
+             <Thumbnail source={{uri: this.props.item.uri }} />
+          </Left>
+          <Body>
+             <Text>{this.props.item.name}</Text>
+             <Text note>Hot girl</Text>
+          </Body>
+        </ListItem>
       </Swipeout>
     );
   }
 }
 
+class flatListBasic extends Component {
+  constructor(props) {
+    super(props);
 
-
- class flatListBasic extends Component {
-   constructor(props) {
-     super(props)
-   
-     this.state = {
-        deleteRowkey:null
-     }
-   }
-   refresherFlatlist=(deleteKey)=>{
-      this.setState((prevState)=>{
-        return{
-          deleteRowkey:deleteKey
-        }
-      });
-   }
-   
+    this.state = {
+      deleteRowkey: null,
+    };
+  }
+  refresherFlatlist = deleteKey => {
+    this.setState(prevState => {
+      return {
+        deleteRowkey: deleteKey,
+      };
+    });
+  };
+  //Cập nhật giao diện khi state thay đổi nào đó
   render() {
     return (
-      <View style={styles.container}>
-        <FlatList
-          data={Users}
-          renderItem={({item, index}) => (
-            <FlatListItem item={item} index={index}  parentFlatlist={this}/>
-          )}
-        />
-      </View>
+      <Container>
+        <Header>
+          <Left>
+            <Button transparent>
+              <Icon name="menu" />
+            </Button>
+          </Left>
+          <Body>
+            <Title>FlatList</Title>
+          </Body>
+          <Right />
+        </Header>
+        <Content>
+          <List>
+            <FlatList
+              data={Users}
+              renderItem={({item, index}) => (
+                <FlatListItem item={item} index={index} parentFlatlist={this} />
+              )}
+            />
+          </List>
+        </Content>
+      </Container>
     );
   }
 }
 
-
-const styles=StyleSheet.create({
-    container  :{
-        flex:1
-    },
-    view:{
-        borderBottomColor:"#93D0FE",
-        borderBottomWidth: 1,
-        flexDirection:"row"
-    },
-    text:{
-        justifyContent:"center",
-        marginLeft:10
-    }
-})
+const styles = StyleSheet.create({});
 
 export default flatListBasic;
