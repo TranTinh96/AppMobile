@@ -2,12 +2,12 @@ var Users=[
     {
         id:"eWRhpRV",
         name :"Emy",
-        uri:"https://genknews.genkcdn.vn/thumb_w/690/2019/8/12/2-1565625646344464974242.jpg"
+        uri:"https://www.truyen-thong.org/wp-content/uploads/2019/05/amee-1.jpg"
     },
     {
         id:"23TplPdS",
         name :"Trâm Anh",
-        uri:"https://media.laodong.vn/Storage/newsportal/2019/4/13/727763/Tram-Anh-7.jpg"
+        uri:"https://cdn.24h.com.vn/upload/2-2019/images/2019-04-18/1555559536-395-clip-hon-1-phut-day-nong-bong-cua-tram-anh-duoc-chia-se-chong-mat-eba88d08c6492f177658-1555551748-width700height932.jpg"
     },
     {
         id:"46Juzcyx",
