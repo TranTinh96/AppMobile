@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 import {Container,Button,Text} from "native-base"
-
+import styles from "../../assets/styles/styles.screen"
 
 export default class homeScreen extends Component {
   render() {
     return (
-      <Container
-        style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-          <Text>Home</Text>
+      <Container>
+
       </Container>
     );
   }
