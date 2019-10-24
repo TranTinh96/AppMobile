@@ -13,11 +13,11 @@ export default class signin extends Component {
           <Form>
             <Item>
               <Icon name="envelope" size={23} color={"#2D8DC9"} />
-              <Input placeholder="Email" style={styles.input} />
+              <Input placeholder="Email" style={styles.input}  autoCompleteType="email" />
             </Item>
             <Item style={{marginTop: 30}} >
               <Icon name="lock" size={20}  color={"#2D8DC9"}/>
-              <Input placeholder="Password" style={styles.input} autoCompleteType="password"/>
+              <Input placeholder="Password" style={styles.input} autoCompleteType="password" secureTextEntry={true}/>
             </Item>
           </Form>
           <View>
@@ -81,11 +81,10 @@ const styles = StyleSheet.create({
   },
   login: {
     backgroundColor:"#E1306C",
-    marginTop: 40,
+    marginTop: 30,
     justifyContent: 'center',
     alignItems:"center",
     fontFamily: 'Poppins-Medium',
-    textShadowOffset:{width: 0, height: 0},
   },
   btnFaceGoogle:{
     flexDirection: 'row',

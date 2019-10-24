@@ -11,7 +11,7 @@ export default class sign extends Component {
           <Button rounded transparent style={styles.signup}  onPress={() => {
             navigation.navigate('Signup', { name :'Signup'});
           }}>
-            <Text style={styles.textSignup}>SIGN UP</Text>
+            <Text style={styles.textSignup}>CREATE ACCOUT</Text>
           </Button>
           <Button rounded transparent style={styles.login} onPress={() => {
             navigation.navigate('Signin', { name :'Home'});
@@ -44,22 +44,22 @@ const styles = StyleSheet.create({
     },
     signup:{
         justifyContent:"center",
-        backgroundColor:"#E1306C",
+        backgroundColor:"#1DA1F2",
     },
     textSignup:{
       fontFamily:"Poppins-Bold",
-      fontSize:16,
-      color:'white'
+      fontSize:17,
+      color:'white',
     },
     login:{
         marginTop: 18,
         justifyContent:"center",
         fontFamily:"Poppins-Regular",
-        backgroundColor:"#3b5998",
+        backgroundColor:"#E1306C",
     },
     textFace:{
       fontFamily:"Poppins-Bold",
-      fontSize:16,
+      fontSize:17,
       color:'white'
     }
 })
