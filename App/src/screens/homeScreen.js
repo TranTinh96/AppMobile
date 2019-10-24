@@ -5,7 +5,7 @@ import styles from "../../assets/styles/styles.screen"
 export default class homeScreen extends Component {
   render() {
     return (
-      <Container>
+      <Container style={styles.background}>
 
       </Container>
     );
