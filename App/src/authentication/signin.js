@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, View, Image, ImageBackground} from 'react-native';
 import {Button, Text, Form, Item, Input} from 'native-base';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-export default class signin extends Component {
+export default class Signin extends Component {
   render() {
     return (
       <ImageBackground

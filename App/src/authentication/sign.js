@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import {StyleSheet ,View,Image,ImageBackground} from 'react-native';
 import {Button,Text} from "native-base"
 
-export default class sign extends Component {
+export default class Sign extends Component {
   render() {
-    const {navigation} = this.props;
+    //const {navigation} = this.props;
     return (
       <ImageBackground source={require('../../assets/images/111.png')} style={styles.container}>
         <View style={styles.button}>
@@ -17,11 +17,6 @@ export default class sign extends Component {
             navigation.navigate('Signin', { name :'Home'});
           }}>
             <Text style={styles.textFace}>LOGIN</Text>
-          </Button>
-          <Button rounded transparent style={styles.login} onPress={() => {
-            navigation.navigate('Home', { name :'Home'});
-          }}>
-            <Text style={styles.textFace}>Home</Text>
           </Button>
         </View>
       </ImageBackground>

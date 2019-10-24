@@ -3,7 +3,7 @@ import {StyleSheet, View, Image, ImageBackground} from 'react-native';
 import {Button, Text, Form, Item, Input,CheckBox,Body,ListItem} from 'native-base';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
-export default class signup extends Component {
+export default class Signup extends Component {
   constructor(props) {
     super(props)
   
@@ -56,7 +56,7 @@ export default class signup extends Component {
               />
             </Item>
             <ListItem style={{marginTop:10,borderColor:"white"}}>
-              <CheckBox checked={true}/>
+              <CheckBox checked={false}/>
               <Body>
                 <Text style={styles.checked}> I agree all statements in Terms</Text>
               </Body>

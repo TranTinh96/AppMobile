@@ -1,22 +1,17 @@
 import React, {Component} from 'react';
-import { createStackNavigator } from 'react-navigation-stack';
+import { createStackNavigator,createBottomTabNavigator } from 'react-navigation';
 
 import homeScreen from "./src/screens/homeScreen"
 import tableScreen from "./src/screens/tableScreen"
 import alarmScreen from "./src/screens/alarmScreen"
-import sign from './src/authentication/sign'
-import signin from './src/authentication/signin'
-import signup from './src/authentication/signup'
+import Sign from './src/authentication/sign'
+import Signin from './src/authentication/signin'
+import Signup from './src/authentication/signup'
 
-
+/*
 const AppNavigator = createStackNavigator(
   { 
-    Sign :sign,
-    Signin :signin,
-    Signup : signup,
-    Home: homeScreen,
-    Tables: tableScreen,
-    Alarms: alarmScreen,
+    Sign , Signin , Signup 
   },
   {
     initialRouteName: 'Sign',
@@ -31,6 +26,11 @@ const AppNavigator = createStackNavigator(
     },
   }
 );
+*/
   
+const TabNavigator = createBottomTabNavigator({
+  homeScreen,tableScreen,alarmScreen
 
-export default AppNavigator
+});
+
+export default TabNavigator
