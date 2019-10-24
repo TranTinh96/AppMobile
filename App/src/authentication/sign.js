@@ -18,6 +18,11 @@ export default class sign extends Component {
           }}>
             <Text style={styles.textFace}>LOGIN</Text>
           </Button>
+          <Button rounded transparent style={styles.login} onPress={() => {
+            navigation.navigate('Home', { name :'Home'});
+          }}>
+            <Text style={styles.textFace}>Home</Text>
+          </Button>
         </View>
       </ImageBackground>
     );

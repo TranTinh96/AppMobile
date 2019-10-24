@@ -22,7 +22,7 @@ const AppNavigator = createStackNavigator(
     initialRouteName: 'Sign',
     defaultNavigationOptions: {
       headerStyle: {
-        backgroundColor: '#405DE6',
+        backgroundColor: '#3b5998',
       },
       headerTintColor: '#fff',
       headerTitleStyle: {
