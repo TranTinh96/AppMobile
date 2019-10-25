@@ -19,7 +19,8 @@ const tableScreen = createMaterialTopTabNavigator(
       inactiveBackgroundColor: 'white',
       navigationOptions: {},
       labelStyle: {
-        fontSize: 10,
+        fontSize: 15,
+        fontFamily:"Poppins-Medium"
       },
       style: {
         borderColor: '#e6e6e6',
