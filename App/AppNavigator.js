@@ -9,7 +9,6 @@ import settingScreen from "./src/screens/settingScreen"
 import Sign from './src/authentication/sign'
 import Signin from './src/authentication/signin'
 import Signup from './src/authentication/signup'
-import { Tile } from 'react-native-elements';
 
 
 const Authentication= createStackNavigator(
@@ -67,15 +66,15 @@ const AppNavigator = createBottomTabNavigator(
   {
     initialRouteName: 'Homes',
     tabBarOptions: {
-      activeTintColor: '#405DE6',
-      inactiveTintColor: '#AAAAA9',
+      activeTintColor:'#405DE6',
+      inactiveTintColor:'#AAAAA9',
       navigationOptions:{
       },
       labelStyle: {
         fontSize: 0,
       },
       style: {
-        backgroundColor: 'white',
+        backgroundColor:"white",
         borderColor: '#e6e6e6',
       },
     },

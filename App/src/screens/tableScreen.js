@@ -22,7 +22,8 @@ const tableScreen = createMaterialTopTabNavigator(
       },
       style: {
         borderColor: '#e6e6e6',
-        color:"black"
+        color:"black",
+        backgroundColor:"#35A7FF"
       },
     },
   },
