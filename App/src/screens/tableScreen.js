@@ -2,25 +2,23 @@ import React, { Component } from 'react'
 import { createAppContainer } from 'react-navigation';
 import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 
-import bonChiet from "../table/table.bonchiet";
+import Chiet from "../table/table.bonchiet";
 import soCap from "../table/table.soCap";
 import thuCap from "../table/table.thuCap";
 
 const tableScreen = createMaterialTopTabNavigator(
   {
-    bonChiet,
+    Chiet,
     soCap,
     thuCap,
   },
   {
-    initialRouteName: 'bonChiet',
+    initialRouteName: 'Chiet',
     tabBarOptions: {
-      activeBackgroundColor: '#F5F8FA',
-      inactiveBackgroundColor: 'white',
       navigationOptions: {},
       labelStyle: {
-        fontSize: 15,
-        fontFamily:"Poppins-Medium"
+        fontSize: 14,
+        fontFamily:"Poppins-Bold"
       },
       style: {
         borderColor: '#e6e6e6',
