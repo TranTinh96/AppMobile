@@ -28,18 +28,10 @@ const Authentication= createStackNavigator(
     },
   }
 );
-
-const Homes =createStackNavigator({homeScreen});
-const Tables =createStackNavigator({tableScreen});
-const Alarms =createStackNavigator({alarmScreen});
-const Settings =createStackNavigator({settingScreen});
-
-
-
 const AppNavigator = createBottomTabNavigator(
   {
     Homes: {
-      screen:Homes,
+      screen:homeScreen,
       navigationOptions:{
         tabBarIcon:({tincolor})=>(
           <Icon name="home" size={25}  color={'#1DA1F2'}/>
@@ -55,7 +47,7 @@ const AppNavigator = createBottomTabNavigator(
       }
     },
     Alarms: {
-      screen:Alarms,
+      screen:alarmScreen,
       navigationOptions:{
         tabBarIcon:({tincolor})=>(
           <Icon name="access-alarms"  size={25} color={'#1DA1F2'}/>
@@ -63,7 +55,7 @@ const AppNavigator = createBottomTabNavigator(
       }
     },
     Settings: {
-      screen:Settings,
+      screen:settingScreen,
       navigationOptions:{
         tabBarIcon:({tincolor})=>(
           <Icon name="reorder"  size={25} color={'#1DA1F2'}/>
@@ -88,4 +80,4 @@ const AppNavigator = createBottomTabNavigator(
   },
 );
 
-export default AppNavigator
+export default AppNavigator;

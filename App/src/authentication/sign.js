@@ -4,7 +4,7 @@ import {Button,Text} from "native-base"
 
 export default class Sign extends Component {
   render() {
-    //const {navigation} = this.props;
+    const {navigation} = this.props;
     return (
       <ImageBackground source={require('../../assets/images/111.png')} style={styles.container}>
         <View style={styles.button}>
