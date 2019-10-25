@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import homeScreen from "./src/screens/homeScreen"
 import tableScreen from "./src/screens/tableScreen"
 import alarmScreen from "./src/screens/alarmScreen"
+import settingScreen from "./src/screens/settingScreen"
 import Sign from './src/authentication/sign'
 import Signin from './src/authentication/signin'
 import Signup from './src/authentication/signup'
@@ -28,10 +29,17 @@ const Authentication= createStackNavigator(
   }
 );
 
-const TabNavigator = createBottomTabNavigator(
+const Homes =createStackNavigator({homeScreen});
+const Tables =createStackNavigator({tableScreen});
+const Alarms =createStackNavigator({alarmScreen});
+const Settings =createStackNavigator({settingScreen});
+
+
+
+const AppNavigator = createBottomTabNavigator(
   {
     Homes: {
-      screen:homeScreen,
+      screen:Homes,
       navigationOptions:{
         tabBarIcon:({tincolor})=>(
           <Icon name="home" size={25}  color={'#1DA1F2'}/>
@@ -47,10 +55,18 @@ const TabNavigator = createBottomTabNavigator(
       }
     },
     Alarms: {
-      screen:alarmScreen,
+      screen:Alarms,
       navigationOptions:{
         tabBarIcon:({tincolor})=>(
           <Icon name="access-alarms"  size={25} color={'#1DA1F2'}/>
+        )
+      }
+    },
+    Settings: {
+      screen:Settings,
+      navigationOptions:{
+        tabBarIcon:({tincolor})=>(
+          <Icon name="reorder"  size={25} color={'#1DA1F2'}/>
         )
       }
     },
@@ -73,4 +89,4 @@ const TabNavigator = createBottomTabNavigator(
   },
 );
 
-export default TabNavigator
+export default AppNavigator

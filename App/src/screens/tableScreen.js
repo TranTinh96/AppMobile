@@ -1,12 +1,32 @@
 import React, { Component } from 'react'
-import {Container,Text,Button} from "native-base";
-import styles from "../../assets/styles/styles.screen"
-export default class tableScreen extends Component {
-  render() {
-    return (
-      <Container style={styles.background}>
+import { createAppContainer } from 'react-navigation';
+import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 
-      </Container>
-    );
-  }
-}
+import bonChiet from "../table/table.bonchiet";
+import soCap from "../table/table.soCap";
+import thuCap from "../table/table.thuCap";
+
+const tableScreen = createMaterialTopTabNavigator(
+  {
+    bonChiet,
+    soCap,
+    thuCap,
+  },
+  {
+    initialRouteName: 'bonChiet',
+    tabBarOptions: {
+      activeBackgroundColor: '#F5F8FA',
+      inactiveBackgroundColor: 'white',
+      navigationOptions: {},
+      labelStyle: {
+        fontSize: 10,
+      },
+      style: {
+        borderColor: '#e6e6e6',
+        color:"black"
+      },
+    },
+  },
+);
+
+export default createAppContainer(tableScreen);
