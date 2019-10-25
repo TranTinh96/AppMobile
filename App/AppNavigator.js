@@ -9,6 +9,7 @@ import settingScreen from "./src/screens/settingScreen"
 import Sign from './src/authentication/sign'
 import Signin from './src/authentication/signin'
 import Signup from './src/authentication/signup'
+import { Tile } from 'react-native-elements';
 
 
 const Authentication= createStackNavigator(
@@ -33,32 +34,32 @@ const AppNavigator = createBottomTabNavigator(
     Homes: {
       screen:homeScreen,
       navigationOptions:{
-        tabBarIcon:({tincolor})=>(
-          <Icon name="home" size={25}  color={'#1DA1F2'}/>
+        tabBarIcon:({focused, horizontal,tintColor})=>(
+          <Icon name="home" size={25}  color={tintColor}/>
         )
       }
     },
     Tables: {
       screen:tableScreen,
       navigationOptions:{
-        tabBarIcon:({tincolor})=>(
-          <Icon name="grid-on"  size={23} color={'#1DA1F2'} />
+        tabBarIcon:({focused, horizontal,tintColor})=>(
+          <Icon name="grid-on"  size={23} color={tintColor} />
         )
       }
     },
     Alarms: {
       screen:alarmScreen,
       navigationOptions:{
-        tabBarIcon:({tincolor})=>(
-          <Icon name="notifications-none"  size={26} color={'#1DA1F2'}/>
+        tabBarIcon:({focused, horizontal,tintColor})=>(
+          <Icon name="notifications-none"  size={26} color={tintColor}/>
         )
       }
     },
     Settings: {
       screen:settingScreen,
       navigationOptions:{
-        tabBarIcon:({tincolor})=>(
-          <Icon name="reorder"  size={25} color={'#1DA1F2'}/>
+        tabBarIcon:({focused, horizontal,tintColor})=>(
+          <Icon name="reorder"  size={25} color={tintColor}/>
         )
       }
     },
@@ -66,7 +67,8 @@ const AppNavigator = createBottomTabNavigator(
   {
     initialRouteName: 'Homes',
     tabBarOptions: {
-      inactiveBackgroundColor:"white",
+      activeTintColor: '#405DE6',
+      inactiveTintColor: '#AAAAA9',
       navigationOptions:{
       },
       labelStyle: {

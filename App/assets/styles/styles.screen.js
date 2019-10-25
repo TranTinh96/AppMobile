@@ -3,7 +3,7 @@ import {StyleSheet, Modal} from 'react-native';
 const styles = StyleSheet.create({
   background: {
     backgroundColor: 'white',
-    paddingTop: 10,
+    paddingTop: 8,
     paddingBottom: 2,
   },
   background2: {
@@ -15,10 +15,10 @@ const styles = StyleSheet.create({
   colorTabs: {
     backgroundColor: 'white',
   },
-  header: {height: 50, backgroundColor: '#00AFF0'},
+  header: {height: 50, backgroundColor: '#FAD7BD'},
   text: {textAlign: 'center', fontSize: 14, fontFamily: 'Poppins-Medium'},
   dataWrapper: {marginTop: -1},
-  row: {height: 40, backgroundColor: '#fafafa'},
+  row: {height: 40, backgroundColor:'#fafafa'},
   /*-------------Screen Setting------------*/
   avatar:{
     marginBottom: 20,

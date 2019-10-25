@@ -27,11 +27,11 @@ export default class Chiet extends Component {
       <Container style={styles.background}>
          <ScrollView horizontal={true}>
           <View>
-            <Table borderStyle={{borderWidth: 1, borderColor: '#fafafa'}}>
+            <Table borderStyle={{borderWidth: 0.6, borderColor:'#1DA1F2'}}>
               <Row data={state.tableHead} widthArr={state.widthArr} style={styles.header} textStyle={styles.text}/>
             </Table>
             <ScrollView style={styles.dataWrapper}>
-              <Table borderStyle={{borderWidth: 1, borderColor: '#C1C0B9'}}>
+              <Table borderStyle={{borderWidth:0.6, borderColor: '#C1C0B9'}}>
                 {
                   tableData.map((rowData, index) => (
                     <Row

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {StyleSheet ,View,Text} from 'react-native';
+import {StyleSheet ,View,Text,Image} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 export default class Header extends Component {
@@ -8,10 +8,10 @@ export default class Header extends Component {
         <View style={styles.container}>
             <LinearGradient start={{x: 0, y: 0}} end={{x: 1, y: 0}} colors={['#2DA1F2','#405DE6']} style={styles.linearGradient}>
                 <View style={styles.col}>
-                    <Text style={styles.name}>{this.props.name}</Text>
+                    <Image  source={require("../../assets/images/menu.png")}/>
                     <View style={styles.searchBell}>
-                         <Icon name={'search'}  size={26} color={'white'} style={styles.icon} />
-                         <Icon name={'notifications-none'}  size={26} color={'white'} style={styles.icon}/>
+                         <Icon name={'search'}  size={24} color={'white'} style={styles.icon} />
+                         <Icon name={'notifications-none'}  size={24} color={'white'} style={styles.icon}/>
                     </View>
                 </View>
             </LinearGradient>
@@ -41,9 +41,9 @@ const styles = StyleSheet.create({
     },
     name:{
         fontFamily:"Poppins-Bold",
-        fontSize:20,
+        fontSize:18,
         color:'white',
-        marginTop: 7,
+       
     },
     icon:{
         padding:8,
