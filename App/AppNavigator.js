@@ -50,7 +50,7 @@ const AppNavigator = createBottomTabNavigator(
       screen:alarmScreen,
       navigationOptions:{
         tabBarIcon:({tincolor})=>(
-          <Icon name="access-alarms"  size={25} color={'#1DA1F2'}/>
+          <Icon name="notifications-none"  size={26} color={'#1DA1F2'}/>
         )
       }
     },

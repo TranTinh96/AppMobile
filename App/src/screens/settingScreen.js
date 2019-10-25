@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Container, Content, Button, ListItem, Text, Left, Body, Right, Switch,List,Thumbnail } from 'native-base';
+import Header from '../screen.library/Header';
 import styles from "../../assets/styles/styles.screen"
+
 
 export default class settingScreen extends Component {
   render() {
     return (
-      <Container style={styles.background}>
+      <Container style={styles.background1}>
         <Content>
+          <Header name="Setting"/>
           <List style={styles.avatar}>
             <ListItem avatar >
               <Left>

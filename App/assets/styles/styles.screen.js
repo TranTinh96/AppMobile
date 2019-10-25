@@ -2,9 +2,14 @@ import {StyleSheet, Modal} from 'react-native';
 
 const styles = StyleSheet.create({
   background: {
-    backgroundColor: '#fafafa',
+    backgroundColor: 'white',
     paddingTop: 10,
     paddingBottom: 2,
+  },
+  background2: {
+    backgroundColor: 'white',
+    paddingTop: 0,
+    paddingBottom: 0,
   },
   /*-------------Table------------*/
   colorTabs: {
@@ -25,6 +30,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Medium',
     fontSize:15
   }
+ 
 });
 
 
