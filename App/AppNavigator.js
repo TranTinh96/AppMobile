@@ -74,7 +74,6 @@ const AppNavigator = createBottomTabNavigator(
   {
     initialRouteName: 'Homes',
     tabBarOptions: {
-      activeBackgroundColor:"#F5F8FA",
       inactiveBackgroundColor:"white",
       navigationOptions:{
       },
