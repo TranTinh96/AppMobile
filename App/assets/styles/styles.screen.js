@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     paddingBottom: 0,
    
   },
-  /*-------------Table------------*/
+  /*----------------Table---------------*/
   colorTabs: {
     backgroundColor: 'white',
   },
@@ -45,22 +45,38 @@ const styles = StyleSheet.create({
   },
   avatarText:{
     fontFamily: 'Poppins-Medium',
-    fontSize:16,
+    fontSize:17,
     color:"#5851DB"
   },
   avatarNoteText:{
     fontFamily: 'Poppins-Medium',
   },
   textIcon:{
-    fontFamily: 'Poppins-Medium',
-    fontSize:15
+    fontFamily: 'Poppins-Regular',
+    fontSize:16
   },
    settings:{
       backgroundColor:"white"
    },
    icons:{
      marginTop: 15,
-   }
+   },
+   /*----------------Home-----------------*/
+   containerHome:{
+     paddingTop: 15,
+     flex:1,
+     width:"100%",
+     height:"100%"
+   },
+  //Scrooll View Horizontal
+    scroollViewHome:{
+      backgroundColor:"white",
+      borderColor:"#e6e6e6",
+      //  borderWidth:1
+    },
+    horizontalHome:{
+      width:"100%"
+    }
  
 });
 
