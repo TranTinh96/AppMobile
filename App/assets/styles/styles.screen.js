@@ -2,7 +2,7 @@ import {StyleSheet, Modal} from 'react-native';
 
 const styles = StyleSheet.create({
   background: {
-    backgroundColor:'white',
+    backgroundColor:'#ffffff',
     paddingTop: 8,
     paddingBottom: 2,
     flex: 1,
@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     height:"100%"
   },
   background2: {
-    backgroundColor: 'white',
+    backgroundColor:'white',
     paddingTop: 0,
     paddingBottom: 0,
     flex:1,
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
   },
   header: {height: 50, backgroundColor: '#FAF2D3'},
   text: {textAlign: 'center', fontSize: 14, fontFamily: 'Poppins-Medium'},
-  dataWrapper: {marginTop: -1},
-  row: {height: 40, backgroundColor:'#fafafa'},
+  dataWrapper: {marginTop: 1},
+  row: {height: 40, backgroundColor:'#fff'},
   /*-------------Screen Setting------------*/
   avatar:{
      width:"100%",
@@ -72,69 +72,133 @@ const styles = StyleSheet.create({
    },
    /*----------------Home-----------------*/
    containerHome:{
-     height:130,
+     height:140,
      width:"100%",
    },
   //Scrooll View Horizontal
     scroollViewHome:{
-      justifyContent:"center"
+      justifyContent:"center",
+      marginTop:20,
     },
     horizontalHome:{
       width:"100%",
 
     },
     tabHome1:{
-        height:110,
-        width:240,
-        borderColor:"#e6e6e6",
-        borderWidth :1,
+        height:100,
+        width:220,
         marginLeft:20,
         justifyContent:"center",
         borderRadius:5,
+        shadowColor: "black",
+        shadowOffset: {
+          width:0,
+          height:3,
+        },
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
+        elevation: 3
+        
     },
     tabHome2:{
-        height:110,
-        borderColor:"#e6e6e6",
-        borderWidth :1,
-        width:240,
+        height:100,
+        width:220,
         justifyContent:"center",
         marginLeft:20,
-        borderRadius:5
+        borderRadius:5,
+        shadowColor: "black",
+        shadowOffset: {
+          width:0,
+          height:3,
+        },
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
+        elevation: 10,
     },
     tabHome3:{
-        height:110,
-        borderColor:"#e6e6e6",
-        borderWidth :1,
-        width:240,
+        height:100,
+        width:220,
         justifyContent:"center",
         marginLeft:20,
-        borderRadius:5
+        borderRadius:5,
+        shadowColor: "black",
+        shadowOffset: {
+          width:0,
+          height:10,
+        },
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
+        elevation: 3,
+
     },
     tabHome4:{
-        height:110,
-        borderColor:"#e6e6e6",
-        borderWidth :1,
-        width:240,
+        height:100,
+        width:220,
         justifyContent:"center",
         marginLeft:20,
         marginRight:20,
-        borderRadius:5
+        borderRadius:5,
+        shadowColor: "black",
+        shadowOffset: {
+          width:0,
+          height:3,
+        },
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
+        elevation: 10,
     },
     //
     contentHome :{
-      backgroundColor:"red",
-      height:80,
+      backgroundColor:"#fff",
+      height:70,
       marginTop:20,
       marginLeft:20,
       marginRight: 20,
+      borderRadius:5,
+      shadowColor: "#1DA1F2",
+      shadowOffset: {
+        height:0.1,
+      },
+      shadowOpacity: 0.5,
+      shadowRadius: 10,
+      elevation: 1,
+      flexDirection: 'row',
+      alignItems:"center",
+      
     },
-    //Chartjs
-    chartHome:{
-      backgroundColor:"blue",
+    image:{
+        width:50,
+        height:50,
+        marginLeft:10,
+        borderRadius:200
+        
+    },
+    contentView:{
+      marginLeft:10,
+    },
+    chart:{
       height:300,
       marginTop:20,
       marginLeft: 20,
       marginRight: 20,
+      borderRadius:5,
+      shadowColor: "#1DA1F2",
+      shadowOffset: {
+        width:0,
+        height:1,
+      },
+      shadowOpacity: 0.1,
+      shadowRadius: 10,
+      elevation: 3,
+    },
+    //Chartjs
+    chartHome:{
+      height:300,
+      marginTop:20,
+      marginLeft: 20,
+      marginRight: 20,
+      borderRadius:5,
+      
     }
  
 });
