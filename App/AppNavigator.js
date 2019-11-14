@@ -81,4 +81,4 @@ const AppNavigator = createBottomTabNavigator(
   },
 );
 
-export default AppNavigator;
+export default Authentication;
