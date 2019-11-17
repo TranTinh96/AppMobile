@@ -20,19 +20,16 @@ export default class Signup extends Component {
 
   handelSignup = e =>{
      const {checked,name,email,password,confirm} = this.state
-     console.log(name + email + password + confirm + checked)
-
      if(name && email && password && (password===confirm) && checked)
      {
-      axios
-        .post('/auth/register', {
+      axios.post('auth/register', {
           name: name,
           email: email,
           password: password,
         })
         .then(res => {
-          console.log(res.data);
-          if (res.data.status) {
+          console.log(res.data.status);
+          if(res.data.status) {
             this.props.navigation.navigate('Signin')
           } else {
             this.setState({error_creact: true});
@@ -47,6 +44,7 @@ export default class Signup extends Component {
         console.log("ERROR")
         this.setState({error_creact: true})
      }
+     
     
   }
 

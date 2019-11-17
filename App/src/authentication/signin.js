@@ -1,8 +1,47 @@
 import React, {Component} from 'react';
+import axios from "axios"
 import {StyleSheet, View, Image, ImageBackground} from 'react-native';
 import {Button, Text, Form, Item, Input} from 'native-base';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 export default class Signin extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      email: '',
+      password: '',
+      error_signin: false
+    };
+  }
+  handelSignin = e =>{
+    const {email,password} = this.state
+    if(email && password)
+    {
+     axios.post('auth/signin', {
+         email: email,
+         password: password,
+       })
+       .then(res => {
+         console.log(res.data.status);
+         if(res.data.status) {
+            this.props.navigation.navigate('Sign')
+         } else {
+           this.setState({error_signin: true});
+         }
+       })
+       .catch(err => {
+         this.setState({error_signin: true});
+         console.log(err)
+       });
+
+    }else{
+       console.log("ERROR")
+       this.setState({error_signin: true})
+    }
+    
+   
+ }
+
   render() {
     return (
       <ImageBackground
@@ -12,32 +51,60 @@ export default class Signin extends Component {
         <View style={styles.form}>
           <Form>
             <Item>
-              <Icon name="envelope" size={23} color={"#2D8DC9"} />
-              <Input placeholder="Email" style={styles.input}  autoCompleteType="email" />
+              <Icon name="envelope" size={23} color={'#2D8DC9'} />
+              <Input
+                placeholder="Email"
+                style={styles.input}
+                autoCompleteType="email"
+                onChangeText ={(email)=>{
+                  this.setState({email})
+              }}
+              />
             </Item>
-            <Item style={{marginTop: 30}} >
-              <Icon name="lock" size={20}  color={"#2D8DC9"}/>
-              <Input placeholder="Password" style={styles.input} autoCompleteType="password" secureTextEntry={true}/>
+            <Item style={{marginTop: 30}}>
+              <Icon name="lock" size={20} color={'#2D8DC9'} />
+              <Input
+                placeholder="Password"
+                style={styles.input}
+                autoCompleteType="password"
+                secureTextEntry={true}
+                onChangeText ={(password)=>{
+                  this.setState({password})
+              }}
+              />
             </Item>
           </Form>
           <View>
-            <Button transparent style={styles.forgot} onPress={() => {alert("tr")}}>
+            <Button
+              transparent
+              style={styles.forgot}
+              onPress={() => {
+                alert('tr');
+              }}>
               <Text style={styles.textForgot}>Forgot Password ?</Text>
             </Button>
           </View>
-          <Button rounded transparent style={styles.login} onPress={() => {}}>
+          <Button
+            rounded
+            transparent
+            style={styles.login}
+            onPress={this.handelSignin}>
             <Text style={styles.textLogin}>LOGIN</Text>
           </Button>
           <View style={styles.or}>
-              <Text style={styles.or}>OR CONNECT WITH</Text>
+            <Text style={styles.or}>OR CONNECT WITH</Text>
           </View>
-          <View style={styles.btnFaceGoogle} >
+          <View style={styles.btnFaceGoogle}>
             <Button rounded transparent style={styles.face} onPress={() => {}}>
-              <Icon name='facebook' size={20} color="white"/>
+              <Icon name="facebook" size={20} color="white" />
               <Text style={styles.textFace}>Facebook</Text>
             </Button>
-            <Button rounded transparent style={styles.google} onPress={() => {}}>
-              <Icon name="google" size={20} color="white"/>
+            <Button
+              rounded
+              transparent
+              style={styles.google}
+              onPress={() => {}}>
+              <Icon name="google" size={20} color="white" />
               <Text style={styles.textGoogle}>Google</Text>
             </Button>
           </View>
