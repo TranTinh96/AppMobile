@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
      height:70,
      backgroundColor:"white",
      marginBottom: 25,
-      alignItems:"center",
+     alignItems:"center",
      flexDirection: 'row',
      paddingLeft:15,
      marginTop:25
@@ -90,6 +90,7 @@ const styles = StyleSheet.create({
         marginLeft:20,
         justifyContent:"center",
         borderRadius:5,
+        /*
         shadowColor: "black",
         shadowOffset: {
           width:0,
@@ -97,6 +98,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.5,
         shadowRadius: 10,
+        */
         elevation: 3
         
     },
@@ -106,6 +108,7 @@ const styles = StyleSheet.create({
         justifyContent:"center",
         marginLeft:20,
         borderRadius:5,
+        /*
         shadowColor: "black",
         shadowOffset: {
           width:0,
@@ -113,6 +116,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.5,
         shadowRadius: 10,
+        */
         elevation: 10,
     },
     tabHome3:{
@@ -121,6 +125,7 @@ const styles = StyleSheet.create({
         justifyContent:"center",
         marginLeft:20,
         borderRadius:5,
+        /*
         shadowColor: "black",
         shadowOffset: {
           width:0,
@@ -128,6 +133,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.5,
         shadowRadius: 10,
+        */
         elevation: 3,
 
     },
@@ -138,6 +144,7 @@ const styles = StyleSheet.create({
         marginLeft:20,
         marginRight:20,
         borderRadius:5,
+        /*
         shadowColor: "black",
         shadowOffset: {
           width:0,
@@ -145,6 +152,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.5,
         shadowRadius: 10,
+        */
         elevation: 10,
     },
     //
@@ -155,12 +163,14 @@ const styles = StyleSheet.create({
       marginLeft:20,
       marginRight: 20,
       borderRadius:5,
+      /*
       shadowColor: "#1DA1F2",
       shadowOffset: {
         height:0.1,
       },
       shadowOpacity: 0.5,
       shadowRadius: 10,
+      */
       elevation: 1,
       flexDirection: 'row',
       alignItems:"center",
@@ -182,6 +192,7 @@ const styles = StyleSheet.create({
       marginLeft: 20,
       marginRight: 20,
       borderRadius:5,
+      /*
       shadowColor: "#1DA1F2",
       shadowOffset: {
         width:0,
@@ -189,6 +200,7 @@ const styles = StyleSheet.create({
       },
       shadowOpacity: 0.1,
       shadowRadius: 10,
+        */
       elevation: 3,
     },
     //Chartjs

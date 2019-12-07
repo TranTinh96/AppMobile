@@ -3,7 +3,7 @@ import { Dimensions,View ,ScrollView,Text,ImageBackground,Image} from 'react-nat
 import {Container,Button} from "native-base"
 import LinearGradient from 'react-native-linear-gradient';
 import styles from "../../assets/styles/styles.screen"
-import Header from '../screen.library/Header';
+import Header from '../component/Header';
 
 export default class homeScreen extends Component {
   render() {
@@ -37,7 +37,7 @@ export default class homeScreen extends Component {
           <LinearGradient
             start={{x: 0, y: 0}}
             end={{x: 1, y: 0}}
-            colors={['#1DA1F2', '#1DA1F2']}
+            colors={['white', 'white']}
             style={styles.contentHome}>
               <Image  source={require("../../assets/images/icon/nhietdo.png")}  style={styles.image} />
               <View style={styles.contentView}>
@@ -47,22 +47,7 @@ export default class homeScreen extends Component {
           <LinearGradient
             start={{x: 0, y: 0}}
             end={{x: 1, y: 0}}
-            colors={['#1DA1F2', '#1DA1F2']}
-            style={styles.contentHome}>
-            
-          </LinearGradient>
-          <LinearGradient
-            start={{x: 0, y: 0}}
-            end={{x: 1, y: 0}}
-            colors={['#1DA1F2', '#1DA1F2']}
-            style={styles.contentHome}>
-            
-          </LinearGradient>
-
-          <LinearGradient
-            start={{x: 0, y: 0}}
-            end={{x: 1, y: 0}}
-            colors={['#1DA1F2', '#1DA1F2']}
+            colors={['white', 'white']}
             style={styles.chart}>
             <View style={styles.scroollViewHome}>
               <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}style={styles.horizontalHome}>
@@ -75,7 +60,7 @@ export default class homeScreen extends Component {
           <LinearGradient
             start={{x: 0, y: 0}}
             end={{x: 1, y: 0}}
-            colors={['#1DA1F2', '#1DA1F2']}
+            colors={['white', 'white']}
             style={styles.chart}>
             <View style={styles.scroollViewHome}>
               <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}style={styles.horizontalHome}>

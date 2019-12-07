@@ -6,7 +6,7 @@ import axios from 'axios';
 const AppContainer = createAppContainer(AppNavigator);
 
 
-axios.defaults.baseURL="http://192.168.137.1:3000/"
+axios.defaults.baseURL="192.168.1.124:5000/"
 export default class App extends Component {
   render() {
     return <AppContainer/>

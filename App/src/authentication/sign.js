@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         fontFamily:"Poppins-Regular"
     },
     button:{
-        marginTop: 350,
+        marginTop: 0,
         width:'100%',
         padding:20
     },
