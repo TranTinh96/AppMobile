@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@amcharts/amcharts4": "^4.7.13",
     "axios": "^0.19.0",
     "native-base": "^2.13.8",
     "react": "16.9.0",
