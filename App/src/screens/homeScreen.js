@@ -4,6 +4,7 @@ import {Container,Button} from "native-base"
 import LinearGradient from 'react-native-linear-gradient';
 import styles from "../../assets/styles/styles.screen"
 import Header from '../component/Header';
+import Chart from "../component/Home/homeChart"
 
 export default class homeScreen extends Component {
   render() {
@@ -52,7 +53,7 @@ export default class homeScreen extends Component {
             <View style={styles.scroollViewHome}>
               <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}style={styles.horizontalHome}>
                 <View style={styles.chartHome}>
-
+                  <Chart/>
                 </View>
               </ScrollView>
             </View>
@@ -65,7 +66,7 @@ export default class homeScreen extends Component {
             <View style={styles.scroollViewHome}>
               <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}style={styles.horizontalHome}>
                 <View style={styles.chartHome}>
-
+                  <Chart/>
                 </View>
               </ScrollView>
             </View>

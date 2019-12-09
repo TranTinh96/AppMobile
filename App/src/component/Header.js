@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {StyleSheet ,View,Text,Image} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+
 export default class Header extends Component {
   render() {
     return (
